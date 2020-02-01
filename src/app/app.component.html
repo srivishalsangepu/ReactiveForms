@@ -1,0 +1,17 @@
+<div class="">
+  <form [formGroup]="sampleform" (ngSubmit)="send(sampleform.value)">
+    <label>
+      Name
+    </label>
+    <input type="text" formControlName="name">
+    <label>
+      Email
+    </label>
+    <input type="email" formControlName="email">
+    <button type="submit">Send</button>
+    <button type="button" (click)="update(sampleform.value)">update</button>
+  </form>
+  
+  
+  <p>Updated Name : {{x}}</p>
+</div>
